@@ -4,7 +4,7 @@ pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 timedatectl set-timezone Asia/Ho_Chi_Minh
-pacman -S sudo neovim grub networkmanager rxvt-unicode xorg xorg-xinit pulseaudio adobe-source-code-pro-fonts intel-ucode
+pacman -S sudo neovim grub networkmanager xorg xorg-xinit pulseaudio adobe-source-code-pro-fonts intel-ucode
 nvim /etc/locale.gen
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
